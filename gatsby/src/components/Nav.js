@@ -36,7 +36,9 @@ export default function Nav() {
     <nav>
       <ul>
         <li>
-          <Link to="/">LOGO</Link>
+          <Link to="/">
+            <Logo />
+          </Link>
         </li>
         <li>
           <Link to="/">Home</Link>
