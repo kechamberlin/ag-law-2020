@@ -33,7 +33,7 @@ const NavStyles = styled.nav`
 
 export default function Nav() {
   return (
-    <nav>
+    <NavStyles>
       <ul>
         <li>
           <Link to="/">
@@ -59,6 +59,6 @@ export default function Nav() {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-    </nav>
+    </NavStyles>
   );
 }
