@@ -32,9 +32,13 @@ export default function Layout({ children }) {
     <div>
       <GlobalStyles />
       <Typography />
-      <Nav />
-      {children}
-      <Footer />
+      <SiteBorderStyles>
+        <ContentStyles>
+          <Nav />
+          {children}
+          <Footer />
+        </ContentStyles>
+      </SiteBorderStyles>
     </div>
   );
 }
