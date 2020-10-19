@@ -1,9 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-// These subsequent imports are from a reference project and only serve as a placeholder.
-// They will be replaced at a later time when I get the proper software to create my own SVGs.
-// TODO: replace bg, stripes with my own SVG.
-import bg from '../assets/images/bg.svg';
-import stripes from '../assets/images/stripes.svg';
 
 const GlobalStyles = createGlobalStyle`
   :root {
