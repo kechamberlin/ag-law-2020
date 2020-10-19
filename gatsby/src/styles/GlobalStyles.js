@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --orange: #ffa502;
   }
   html {
-    background-image: url(${bg});
+    background-color: whitesmoke;
     background-size: 450px;
     background-attachment: fixed;
     font-size: 10px;
