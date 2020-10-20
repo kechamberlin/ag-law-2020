@@ -34,7 +34,7 @@ export default {
     {
       name: 'overview',
       title: 'Overview',
-      type: 'string',
+      type: 'text',
       description: 'Overview of Practice',
     },
     {
