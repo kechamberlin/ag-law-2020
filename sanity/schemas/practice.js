@@ -47,7 +47,9 @@ export default {
   ],
   preview: {
     select: {
-      name: 'practice',
+      title: 'practice',
+      media: 'image',
+      subtitle: 'categories',
     },
     prepare: (fields) => ({
       title: `${fields.name}`,
