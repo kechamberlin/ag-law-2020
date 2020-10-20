@@ -40,7 +40,7 @@ export default {
     {
       name: 'categories',
       title: 'Sub Categories in Practice',
-      type: 'string',
+      type: 'array',
       description: 'Fields included in this Area',
     },
   ],
