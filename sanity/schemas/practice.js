@@ -51,8 +51,10 @@ export default {
       media: 'image',
       subtitle: 'categories',
     },
-    prepare: (fields) => ({
-      title: `${fields.name}`,
+    prepare: ({ title, media, subtitle }) => ({
+      title: title,
+      media: media,
+      subtitle: JSON.stringify(subtitle.join(', ')),
     }),
   },
 };
