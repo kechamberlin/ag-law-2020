@@ -42,6 +42,7 @@ export default {
       title: 'Sub Categories in Practice',
       type: 'array',
       description: 'Fields included in this Area',
+      of: [{ type: 'string' }],
     },
   ],
   preview: {
