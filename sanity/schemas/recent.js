@@ -37,4 +37,16 @@ export default {
       },
     },
   ],
+  preview: {
+    select: {
+      title: 'recent',
+      media: 'image',
+      subtitle: 'description',
+    },
+    prepare: ({ title, media, subtitle }) => ({
+      title: title,
+      media: media,
+      subtitle: subtitle,
+    }),
+  },
 };
