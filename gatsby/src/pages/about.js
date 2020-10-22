@@ -10,3 +10,25 @@ export default function AboutPage({ data }) {
     </>
   );
 }
+
+export const query = graphql`
+  query PersonQuery {
+    persons: allSanityPerson {
+      nodes {
+        id
+        name
+        description
+        slug {
+          current
+        }
+        image {
+          asset {
+            fluid(maxWidth: 2000) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
