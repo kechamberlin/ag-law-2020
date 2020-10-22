@@ -30,3 +30,25 @@ export default function RecentCasesPage({ data }) {
     </>
   );
 }
+
+export const query = graphql`
+  query CaseQuery {
+    allSanityRecent {
+      nodes {
+        id
+        recent
+        description
+        slug {
+          current
+        }
+        image {
+          asset {
+            fluid(maxWidth: 400) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
