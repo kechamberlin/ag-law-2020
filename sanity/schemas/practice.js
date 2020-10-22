@@ -54,7 +54,7 @@ export default {
     prepare: ({ title, media, subtitle }) => ({
       title: title,
       media: media,
-      subtitle: JSON.stringify(subtitle.join(', ')),
+      subtitle: JSON.stringify(subtitle),
     }),
   },
 };
