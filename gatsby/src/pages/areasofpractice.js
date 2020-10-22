@@ -10,3 +10,26 @@ export default function AreasOfPracticePage({ data }) {
     </>
   );
 }
+
+export const query = graphql`
+  query PracticeQuery {
+    practices: allSanityPractice {
+      nodes {
+        id
+        practice
+        overview
+        categories
+        slug {
+          current
+        }
+        image {
+          asset {
+            fluid(maxWidth: 400) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
