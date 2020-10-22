@@ -6,7 +6,7 @@ export default function AboutPage({ data }) {
   const persons = data.persons.nodes;
   return (
     <>
-      <p>About Page</p>
+      <PersonList persons={persons} />
     </>
   );
 }
