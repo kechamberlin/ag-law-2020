@@ -2,10 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PracticeList from '../components/PracticeList';
 
-export default function AreasOfPracticePage() {
+export default function AreasOfPracticePage({ data }) {
+  const practices = data.practices.nodes;
   return (
     <>
-      <p>Areas of Practice Page</p>
+      <PracticeList practices={practices} />
     </>
   );
 }
