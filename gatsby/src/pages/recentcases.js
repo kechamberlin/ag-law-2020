@@ -19,7 +19,14 @@ export default function RecentCasesPage({ data }) {
   const clients = data.allSanityRecent.nodes;
   return (
     <>
-      <p>Recent Cases Page</p>
+      <RecentCasesGrid>
+        {clients.map((client) => (
+          <RecentCasesStyles>
+            <Img fluid={client.image.asset.fluid} alt={client.recent} />
+            <p className="description">{client.description}</p>
+          </RecentCasesStyles>
+        ))}
+      </RecentCasesGrid>
     </>
   );
 }
