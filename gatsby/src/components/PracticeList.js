@@ -46,8 +46,6 @@ function SinglePractice({ practice }) {
 }
 
 export default function PracticeList({ practices }) {
-  console.log(practices);
-
   return (
     <PracticeGridStyles>
       {practices.map((practice) => (
