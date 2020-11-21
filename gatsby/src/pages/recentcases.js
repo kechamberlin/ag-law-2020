@@ -17,7 +17,7 @@ const RecentCasesStyles = styled.div`
   }
 `;
 
-export default function RecentCasesPage({ data }) {
+export default function RecentCasesPage({ data, pageContext }) {
   const clients = data.allSanityRecent.nodes;
   return (
     <>
