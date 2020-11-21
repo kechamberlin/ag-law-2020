@@ -6,7 +6,7 @@ import Pagination from '../components/Pagination';
 import SEO from '../components/SEO';
 
 const RecentCasesGrid = styled.div`
-  display: grid;
+  display: center;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 `;
