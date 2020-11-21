@@ -42,8 +42,9 @@ export default function RecentCasesPage({ data, pageContext }) {
 }
 
 export const query = graphql`
-  query CaseQuery {
-    allSanityRecent {
+  query($skip: Int = 0, $pageSize: Int = 1) {
+    allSanityRecent(limit: $pageSize, skip: $skip) {
+      totalCount
       nodes {
         id
         recent
