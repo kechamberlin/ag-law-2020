@@ -9,6 +9,7 @@ export default {
     description: 'Modesto based law firm serving the 209 area',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
       // Name of the added plugin
