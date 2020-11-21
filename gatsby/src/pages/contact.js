@@ -4,6 +4,14 @@ import OrderStyles from '../styles/OrderStyles';
 import useForm from '../utils/useForm';
 
 export default function ContactPage() {
+  // const [name, setName] = useState('');
+  const { values, updateValue } = useForm({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
   return (
     <>
       <p>Contact Page</p>
