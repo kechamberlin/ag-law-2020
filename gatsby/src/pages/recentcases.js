@@ -21,6 +21,14 @@ export default function RecentCasesPage({ data, pageContext }) {
   const clients = data.allSanityRecent.nodes;
   return (
     <>
+      <SEO title={`Recent Cases - Page ${pageContext.currentPage || 1}`} />
+      <Pagination
+        pageSize={parseInt(process.env.GATSBY_PAGE_SIZE)}
+        totalCount={data.allSanityRecent.totalCount}
+        currentPage={pageContext.currentPage || 1}
+        skip={pageContext.skip}
+        base="/recentcases"
+      />
       <RecentCasesGrid>
         {clients.map((client) => (
           <RecentCasesStyles>
