@@ -1,11 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PracticeList from '../components/PracticeList';
+import SEO from '../components/SEO';
 
 export default function AreasOfPracticePage({ data }) {
   const practices = data.practices.nodes;
   return (
     <>
+      <SEO title="Areas of Practice" />
       <PracticeList practices={practices} />
     </>
   );
